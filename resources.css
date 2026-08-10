@@ -68,3 +68,29 @@
 @media (max-width: 900px) { .resource-heading, .closing-grid { grid-template-columns: 1fr; gap: 25px; } .mode-preview { grid-template-columns: 1fr 1fr; } .mode-preview-intro { grid-column: 1 / -1; padding-right: 0; border-bottom: 1px solid var(--line); } .mode-preview article:first-of-type { padding-left: 0; border-left: 0; } }
 @media (max-width: 900px) { .focus-heading, .citation-layout { grid-template-columns: 1fr; gap: 25px; } .focus-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 620px) { .header-resources { display: none; } .research-resources, .research-focus, .citation-section { padding: 75px 0; } .resource-grid, .focus-grid, .mode-preview { grid-template-columns: 1fr; } .resource-card { min-height: 250px; } .focus-grid article { min-height: 0; padding: 19px; } .focus-grid h3 { margin: 25px 0 8px; } .premise-quote { display: block; margin: 22px 0 28px; } .premise-quote blockquote { font-size: 21px; } .premise-quote cite { display: block; margin-top: 7px; } .mode-preview-intro { padding-bottom: 19px; } .mode-preview article, .mode-preview article:first-of-type { padding: 19px 0; border-left: 0; border-bottom: 1px solid var(--line); } .mode-preview article:last-child { border-bottom: 0; } .citation-code pre { padding: 18px; font-size: 11px; } .project-footer { min-height: 75px; gap: 16px; } .project-footer > span { max-width: 190px; } .footer-links { gap: 15px; } }
+
+.runtime-strip { display: grid; grid-template-columns: 185px 1fr; gap: 24px; align-items: center; margin-top: 34px; padding: 18px 20px; border-top: 1px solid #a8cbc4; border-bottom: 1px solid #a8cbc4; }
+.memory-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.memory-intro h2 em { color: var(--teal); font-weight: 400; }
+.runtime-strip span { color: var(--teal); font-size: 10px; font-weight: 800; letter-spacing: .85px; }
+.runtime-strip p { margin: 0; color: #506b69; font-size: 12px; line-height: 1.7; }
+.situated { padding: 112px 0; }
+.situated-heading { display: grid; grid-template-columns: 1fr .78fr; gap: 90px; align-items: end; margin: 30px 0 50px; }
+.situated h2 { margin: 0; font: 700 clamp(39px,4.8vw,63px)/1.13 var(--serif); }
+.situated h2 em { color: var(--teal); font-weight: 400; }
+.situated-heading p { max-width: 480px; margin: 0; color: var(--muted); line-height: 1.85; }
+.situated-example { display: grid; grid-template-columns: .95fr 1fr 1fr; gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.example-prompt, .situated-example article { min-height: 226px; padding: 24px; background: #fff; }
+.example-prompt { background: #edf4ef; }
+.situated-example span { color: var(--teal); font-size: 10px; font-weight: 800; letter-spacing: .85px; }
+.situated-example h3 { margin: 48px 0 9px; font: 26px/1.15 var(--serif); }
+.situated-example p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.situated-example article:first-of-type { border-top: 4px solid #9abf59; }
+.situated-example article:last-of-type { border-top: 4px solid var(--teal); }
+.situated-formula { margin: 25px 0 0; color: #55706d; font-size: 11px; font-weight: 800; letter-spacing: .8px; text-align: center; }
+.situated-formula b { padding: 0 9px; color: var(--teal); font-size: 14px; }
+.evolution-track { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
+.evolution-track article { min-width: 0; border-left: 3px solid var(--lime); }
+
+@media (max-width: 900px) { .situated-heading { grid-template-columns: 1fr; gap: 25px; } .situated-example { grid-template-columns: 1fr 1fr; } .example-prompt { grid-column: 1 / -1; min-height: 145px; } .example-prompt h3 { margin-top: 28px; } .evolution-track { grid-template-columns: 1fr; gap: 8px; } }
+@media (max-width: 620px) { .runtime-strip { grid-template-columns: 1fr; gap: 8px; padding: 16px 0; } .situated { padding: 75px 0; } .situated-example { grid-template-columns: 1fr; } .example-prompt { grid-column: auto; min-height: 0; } .example-prompt, .situated-example article { min-height: 0; } .situated-example h3 { margin: 28px 0 8px; } .situated-formula { line-height: 2.1; } }

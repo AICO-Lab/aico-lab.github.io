@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Built on long-term AI memory, AICO explores relationship-aware AI, dialogue strategy, and feedback-grounded alignment for AI-human cooperation." />
-    <meta name="keywords" content="AICO, long-term AI memory, AI-human alignment, AI cooperation, relationship-aware AI, dialogue strategy tree, PERSONAL alignment, EXPERT alignment, multi-source RAG" />
+    <meta name="description" content="AICO explores the next step of long-term memory: evolving understanding of people, contexts, and strategies for what AI does next." />
+    <meta name="keywords" content="AICO, long-term memory, evolving AI behavior, AI-human alignment, context-aware AI, strategy evolution, long-term AI assistance, relationship-aware AI" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Pengcheng Zhou" />
     <meta name="theme-color" content="#087d80" />
@@ -13,35 +13,28 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://aico-lab.github.io/" />
     <meta property="og:title" content="AI-human Alignment and Cooperation: enabling AI to learn cooperation through long-term alignment" />
-    <meta property="og:description" content="Built on long-term AI memory, AICO explores relationship-aware AI, dialogue strategy, and feedback-grounded cooperation." />
+    <meta property="og:description" content="AICO explores the next step of long-term memory: evolving understanding for what AI does next." />
     <meta property="og:image" content="https://aico-lab.github.io/assets/aico-logo.png" />
     <meta property="og:image:alt" content="AICO logo" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="AI-human Alignment and Cooperation: enabling AI to learn cooperation through long-term alignment" />
-    <meta name="twitter:description" content="Built on long-term AI memory, AICO explores relationship-aware AI, dialogue strategy, and feedback-grounded cooperation." />
+    <meta name="twitter:description" content="AICO explores the next step of long-term memory: evolving understanding for what AI does next." />
     <title>AI-human Alignment and Cooperation: enabling AI to learn cooperation through long-term alignment</title>
-    <link rel="stylesheet" href="styles.css?v=20260810-6" />
-    <link rel="stylesheet" href="responsive.css?v=20260810-6" />
-    <link rel="stylesheet" href="resources.css?v=20260810-6" />
+    <link rel="stylesheet" href="styles.css?v=20260810-7" />
+    <link rel="stylesheet" href="responsive.css?v=20260810-7" />
+    <link rel="stylesheet" href="resources.css?v=20260810-7" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareSourceCode",
         "name": "AICO",
-        "description": "Built on long-term AI memory, AICO explores relationship-aware AI, dialogue strategy, and feedback-grounded alignment for AI-human cooperation.",
+        "description": "AICO explores the next step of long-term memory: evolving understanding of people, contexts, and strategies for what AI does next.",
         "url": "https://aico-lab.github.io/",
         "codeRepository": "https://github.com/PKQZPC/AICO",
         "license": "https://www.gnu.org/licenses/agpl-3.0.html",
-        "keywords": "long-term AI memory, AI-human alignment, AI cooperation, relationship-aware AI, dialogue strategy tree, PERSONAL alignment, EXPERT alignment, multi-source RAG",
-        "author": {
-          "@type": "Person",
-          "name": "Pengcheng Zhou"
-        },
-        "publisher": {
-          "@type": "Organization",
-          "name": "AICO-Lab",
-          "url": "https://github.com/AICO-Lab"
-        }
+        "keywords": "long-term memory, evolving AI behavior, AI-human alignment, context-aware AI, strategy evolution, long-term AI assistance",
+        "author": { "@type": "Person", "name": "Pengcheng Zhou" },
+        "publisher": { "@type": "Organization", "name": "AICO-Lab", "url": "https://github.com/AICO-Lab" }
       }
     </script>
   </head>
@@ -49,7 +42,7 @@
     <header class="site-header shell">
       <a class="brand" href="#top" aria-label="AICO home"><span class="brand-mark">A</span><span>AICO</span></a>
       <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
-        <a href="#thesis">Premise</a><a href="#memory">System</a><a href="#cooperation">Alignment modes</a><a href="#technical-report">Resources</a>
+        <a href="#thesis">Premise</a><a href="#memory">Memory model</a><a href="#trajectory">Evolution</a><a href="#modes">Modes</a>
       </nav>
       <div class="header-resources">
         <a class="source-link" href="https://github.com/PKQZPC/AICO" target="_blank" rel="noreferrer">Code</a>
@@ -63,116 +56,111 @@
       <section class="hero shell">
         <div class="hero-copy">
           <p class="eyebrow"><i></i> AI-HUMAN ALIGNMENT AND COOPERATION</p>
-          <h1>Long-term memory<br />that learns <em>how to cooperate.</em></h1>
-          <p class="hero-text">AICO is an open research framework for AI that does more than retain history. It learns who it is working with, what a relationship means now, and how a conversation should move forward.</p>
+          <h1>Long-term memory,<br />beyond <em>remembering.</em></h1>
+          <p class="hero-text">AICO explores how long-term memory can accumulate into an evolving understanding of people, situations, and strategies, then use that understanding to shape what AI does next.</p>
           <div class="hero-actions"><a class="button primary" href="https://github.com/PKQZPC/AICO" target="_blank" rel="noreferrer">Code</a><a class="button secondary" href="#technical-report">Technical report</a></div>
         </div>
-        <div class="hero-system" aria-label="AICO memory system illustration">
-          <div class="system-top"><span>OWNER-PRIVATE CONTEXT</span><span class="pulse">DYNAMIC</span></div>
+        <div class="hero-system" aria-label="AICO long-term memory illustration">
+          <div class="system-top"><span>ACCUMULATED EXPERIENCE</span><span class="pulse">EVOLVING</span></div>
           <div class="system-core"><img src="assets/aico-logo.png" alt="AICO logo" /></div>
-          <div class="signal signal-a"><b>PERSON</b><span>preferences &amp; goals</span></div>
-          <div class="signal signal-b"><b>RELATIONSHIP</b><span>trust &amp; shared history</span></div>
-          <div class="signal signal-c"><b>STRATEGY</b><span>purpose &amp; next move</span></div>
-          <div class="system-bottom">Not a chat archive. A living model for collaboration.</div>
+          <div class="signal signal-a"><b>PERSON</b><span>goals, preferences, experience</span></div>
+          <div class="signal signal-b"><b>CONTEXT</b><span>situations, people, relationships</span></div>
+          <div class="signal signal-c"><b>STRATEGY</b><span>what worked, what comes next</span></div>
+          <div class="system-bottom">Memory becomes context for what comes next.</div>
         </div>
-        <p class="hero-note">AICO treats long-term interaction as an evolving alignment process, not a longer context window.</p>
+        <p class="hero-note">Remember. Understand. Organize. Act. Update.</p>
       </section>
 
       <section id="thesis" class="thesis shell">
-        <p class="section-label">01 / THE PREMISE</p>
+        <p class="section-label">01 / THE NEXT STEP OF LONG-TERM MEMORY</p>
         <div class="premise-quote"><blockquote>"A thousand readers, a thousand Hamlets."</blockquote><cite>An interpretive maxim inspired by Shakespeare's <em>Hamlet</em></cite></div>
-        <div class="thesis-heading"><h2>Long-term memory<br />gives AI <em>continuity.</em></h2><div><p class="lead">Personal alignment gives that continuity meaning. AICO begins from the premise that the same words, memories, and goals can mean different things across people, relationships, and moments.</p><p>AICO does not assume one universally correct way for AI to interact. It distinguishes shared facts and constraints from the personal, relational question of how AI can cooperate appropriately with people now.</p></div></div>
+        <div class="thesis-heading"><h2>Continuity is not<br /><em>understanding.</em></h2><div><p class="lead">Long-term memory lets AI carry the past forward. But continuity alone does not tell AI what an experience means in the present, or how it should affect the next step.</p><p>AICO asks how accumulated interaction can become an evolving understanding of a person, a situation, and the paths that have worked before. Cooperation is one outcome of this process, alongside planning, recommendation, assistance, and action.</p></div></div>
         <div class="contrast-grid">
-          <article class="contrast muted"><span>SHARED GROUND</span><h3>What remains true for everyone?</h3><p>Facts, safety boundaries, explicit commitments, and professional constraints remain accountable and open to verification.</p></article>
-          <article class="contrast active"><span>PERSONAL ALIGNMENT</span><h3>What is appropriate here?</h3><p>Personal memory, relationship context, dialogue purpose, and feedback inform the next cooperative action.</p></article>
-        </div>
-        <div class="mode-preview" aria-label="AICO alignment modes">
-          <div class="mode-preview-intro"><span>ONE FRAMEWORK, TWO MODES</span><p>Alignment changes with its long-term subject and the feedback that may revise it.</p></div>
-          <article><span>P</span><div><h3>PERSONAL</h3><p><b>Aligned subject:</b> the user and their relationship world.<br /><b>Feedback:</b> user, partner, system, and model signals remain inspectable and revisable.</p></div></article>
-          <article><span>E</span><div><h3>EXPERT</h3><p><b>Aligned subject:</b> the expert; the client is service context.<br /><b>Feedback:</b> expert confirmation is required before professional logic persists.</p></div></article>
+          <article class="contrast muted"><span>RECALL</span><h3>What happened before?</h3><p>Past facts, events, preferences, and conversations can be retained and retrieved when they become relevant.</p></article>
+          <article class="contrast active"><span>ACCUMULATED UNDERSTANDING</span><h3>What matters now?</h3><p>Experience is organized around the current person, context, purpose, and possible strategy for what comes next.</p></article>
         </div>
       </section>
 
       <section id="focus" class="research-focus">
         <div class="shell">
           <div class="focus-heading">
-            <div><p class="section-label">02 / RESEARCH MODEL</p><h2>How AICO turns<br />memory into <em>cooperation.</em></h2></div>
-            <p>AICO turns its premise into a working model: retain meaningful history, read the relevant relationship world, organize a multi-turn strategy, and learn from mode-specific feedback.</p>
+            <div><p class="section-label">02 / FROM MEMORY TO FUTURE ACTION</p><h2>What should memory<br /><em>change next?</em></h2></div>
+            <p>AICO does more than retrieve relevant history. It turns accumulated experience into explicit structures that can guide the next response, recommendation, plan, or action, then evolve as experience continues.</p>
           </div>
           <div class="focus-grid">
-            <article><span>01</span><h3>Meaningful memory</h3><p>Retain history that can guide current judgment, rather than simply growing a transcript.</p></article>
-            <article><span>02</span><h3>Relationship world</h3><p>Read the local people, events, constraints, and shared context around the current interaction.</p></article>
-            <article><span>03</span><h3>Dialogue strategy</h3><p>Organize multi-turn purpose, next actions, transitions, retrieval, and revision.</p></article>
-            <article><span>04</span><h3>Mode-specific feedback</h3><p>Apply different revision rules for personal alignment and expert professional logic.</p></article>
+            <article><span>01</span><h3>Understand</h3><p>Build a working view of the person, their goals, and what has changed over time.</p></article>
+            <article><span>02</span><h3>Read context</h3><p>Identify the situation, people, constraints, relationships, and past experiences that matter now.</p></article>
+            <article><span>03</span><h3>Organize strategy</h3><p>Continue an existing path, adapt it, or create a new one when the situation differs.</p></article>
+            <article><span>04</span><h3>Guide action</h3><p>Use that organized understanding to make the next interaction more appropriate and useful.</p></article>
           </div>
         </div>
       </section>
 
       <section id="memory" class="memory-section">
         <div class="shell">
-          <div class="memory-intro"><p class="section-label">03 / A MEMORY MODEL WITH STRUCTURE</p><h2>Remember the world<br />around the person.</h2><p>AICO does not indiscriminately inject all history. It constructs local, relevant context for the relationship and purpose of the present interaction.</p></div>
-          <div class="memory-map">
-            <svg class="map-edges" viewBox="0 0 1000 320" preserveAspectRatio="none" aria-hidden="true">
-              <path class="edge edge-active" d="M500 132 L228 90" />
-              <path class="edge" d="M500 132 L772 89" />
-              <path class="edge" d="M500 132 L369 242" />
-            </svg>
-            <div class="map-center"><strong>ME</strong><span>aligned subject</span></div>
-            <div class="map-node node-a active-node"><b>A</b><span>current counterpart</span></div><div class="map-node node-b"><b>B</b><span>colleague</span></div><div class="map-node node-c"><b>C</b><span>family</span></div>
-            <p class="map-caption"><strong>A is active.</strong> The system reads A's local relationship subgraph, not a global social graph.</p>
+          <div class="memory-intro"><p class="section-label">03 / LONG-TERM MEMORY NEEDS STRUCTURE</p><h2>More than a<br />memory <em>archive.</em></h2><p>AICO organizes accumulated experience around the person, the current context, recurring topics, and strategies, so that past experience can be reused without treating every new situation as the same.</p></div>
+          <div class="memory-map" aria-label="AICO structured memory illustration">
+            <svg class="map-edges" viewBox="0 0 1000 320" preserveAspectRatio="none" aria-hidden="true"><path class="edge edge-active" d="M500 132 L228 90" /><path class="edge" d="M500 132 L772 89" /><path class="edge" d="M500 132 L369 242" /></svg>
+            <div class="map-center"><strong>NOW</strong><span>current situation</span></div>
+            <div class="map-node node-a active-node"><b>SELF</b><span>person</span></div><div class="map-node node-b"><b>CTX</b><span>context</span></div><div class="map-node node-c"><b>PAST</b><span>experience</span></div>
+            <p class="map-caption"><strong>Local relevance first.</strong> AICO reads the part of long-term experience that can inform the present situation.</p>
           </div>
           <div class="memory-grid">
-            <article><span>01</span><h3>Personal profile</h3><p>Stable and changing preferences, boundaries, memories, and long-term goals.</p></article>
-            <article><span>02</span><h3>Relationship graph</h3><p>Owner-private people, events, constraints, and relationship state around the current counterpart.</p></article>
-            <article><span>03</span><h3>Dynamic topic graph</h3><p>Topics are extracted, linked, reused, merged, or created as interaction evolves.</p></article>
-            <article><span>04</span><h3>Dialogue strategy tree</h3><p>A multi-turn organizer for dialogue phases, next actions, transition conditions, retrieval needs, and risk boundaries.</p></article>
-            <article><span>05</span><h3>Multi-source RAG</h3><p>Personal, relationship, knowledge, strategy, and expert memory provide grounded context.</p></article>
+            <article><span>01</span><h3>Personal memory</h3><p>Goals, preferences, experiences, boundaries, and changes that matter over time.</p></article>
+            <article><span>02</span><h3>Context &amp; relationships</h3><p>Relevant people, situations, events, constraints, and relationship state when another person matters.</p></article>
+            <article><span>03</span><h3>Dynamic topic graph</h3><p>Recurring purposes and topics connected to the earlier situations that give them meaning.</p></article>
+            <article><span>04</span><h3>Strategy tree</h3><p>Paths that can organize multi-turn reasoning, next moves, transitions, and revision.</p></article>
           </div>
+          <div class="runtime-strip"><span>RUNTIME MECHANISMS</span><p>Dynamic topic matching &middot; local graph retrieval &middot; multi-source RAG &middot; strategy execution &middot; feedback calibration</p></div>
         </div>
       </section>
 
-      <section id="loop" class="loop shell">
-        <p class="section-label">04 / FROM ALIGNMENT TO COOPERATION</p>
-        <div class="loop-heading"><h2>A response is a move<br />in a longer <em>relationship.</em></h2><p>AICO organizes more than retrieval. It uses a dialogue strategy tree to turn context into an intentional multi-turn path: understand, establish common ground, enter the core request, and adjust from real feedback.</p></div>
-        <div class="loop-track">
-          <article><span>01</span><h3>Interaction</h3><p>Conversation, event, or request enters the system.</p></article><i>→</i>
-          <article><span>02</span><h3>Alignment model</h3><p>Read person, relationship, topic, goal, and expert logic.</p></article><i>→</i>
-          <article><span>03</span><h3>Strategy organization</h3><p>Retrieve local context and select or extend a dialogue strategy.</p></article><i>→</i>
-          <article><span>04</span><h3>Cooperative action</h3><p>Respond, recommend, or support professional judgment.</p></article>
+      <section class="situated shell">
+        <p class="section-label">04 / SITUATED MEMORY</p>
+        <div class="situated-heading"><h2>The same memory,<br />different <em>paths.</em></h2><p>There is no single best way to act for everyone, or even for the same person in every situation. The same past experience can support different strategies when context, purpose, or relationship changes.</p></div>
+        <div class="situated-example">
+          <div class="example-prompt"><span>ALICE / CURRENT QUESTION</span><h3>Should I follow up?</h3><p>One apparent problem. More than one reasonable path.</p></div>
+          <article><span>CLOSE FRIEND</span><h3>Continue directly</h3><p>Shared history suggests a direct follow-up is normal and likely to be understood as care.</p></article>
+          <article><span>COLLEAGUE</span><h3>Branch the strategy</h3><p>A more formal relationship and a different purpose call for a different message and timing.</p></article>
         </div>
-        <div class="feedback-row"><span>USER / PARTNER / EXPERT / SYSTEM FEEDBACK</span><p>Feedback becomes evidence for calibration, confirmation, revision, or rejection in the next turn.</p><b>↺</b></div>
+        <p class="situated-formula">PERSON <b>&times;</b> CONTEXT <b>&times;</b> PURPOSE <b>&times;</b> HISTORY <b>=</b> STRATEGY</p>
       </section>
 
-      <section id="cooperation" class="authority">
+      <section id="trajectory" class="loop shell">
+        <p class="section-label">05 / EXPERIENCE BECOMES FUTURE BEHAVIOR</p>
+        <div class="loop-heading"><h2>A response is part<br />of a longer <em>trajectory.</em></h2><p>Each interaction is not an isolated answer. Past experience provides context for the current step; the result of the current step becomes evidence for what should be preserved, changed, or reconsidered next.</p></div>
+        <div class="loop-track evolution-track">
+          <article><span>01</span><h3>Read</h3><p>Locate the current person, purpose, context, and relevant experience.</p></article>
+          <article><span>02</span><h3>Match</h3><p>Find related topics and strategy structures without assuming the situation is identical.</p></article>
+          <article><span>03</span><h3>Shape</h3><p>Reuse, extend, or branch a path for the situation at hand.</p></article>
+          <article><span>04</span><h3>Act</h3><p>Respond, recommend, plan, assist, or support a cooperative next step.</p></article>
+          <article><span>05</span><h3>Calibrate</h3><p>Use new evidence to decide what should become part of future understanding.</p></article>
+        </div>
+        <div class="feedback-row"><span>EXPLICIT STRUCTURE EVOLUTION</span><p>Reuse, extend, branch, revise, or reject. AICO keeps change connected to the experience and context from which it emerged.</p></div>
+      </section>
+
+      <section id="modes" class="authority">
         <div class="shell authority-grid">
-          <div><p class="section-label">05 / FEEDBACK-GROUNDED ALIGNMENT</p><h2>Different feedback,<br />different <em>alignment rules.</em></h2><p class="authority-copy">AICO learns cooperation from feedback, but does not treat every signal alike. PERSONAL integrates feedback from the user, interaction partners, the system, and model evaluation; EXPERT requires the expert's confirmation before professional logic is made persistent.</p></div>
+          <div><p class="section-label">06 / ONE FRAMEWORK, DIFFERENT MAINTENANCE REGIMES</p><h2>Different settings,<br />different <em>verification.</em></h2><p class="authority-copy">PERSONAL and EXPERT share the same long-term memory framework, but they do not require the same rules for maintaining persistent understanding. The difference is how new experience may update what AI carries forward.</p></div>
           <div class="authority-cards">
-            <article class="personal-card"><div class="card-head"><span>P</span><b>PERSONAL</b></div><h3>Learns from everyday feedback</h3><p>The user is the long-term aligned subject. AI can propose and reversibly update personal, relationship, topic, and strategy understanding from user corrections, partner feedback, system observations, and model evaluation.</p><small>User confirmation is a strong signal</small></article>
-            <article class="expert-card"><div class="card-head"><span>E</span><b>EXPERT</b></div><h3>Expert confirmation is required</h3><p>The expert is the long-term aligned subject; the client supplies service context. AI may propose a small candidate extension, but only expert-confirmed logic becomes persistent.</p><small>Expert confirmation is required</small></article>
+            <article class="personal-card"><div class="card-head"><span>P</span><b>PERSONAL</b></div><h3>Progressive assistance</h3><p>AI can gradually maintain working understanding from long-term use to support planning, reflection, everyday decisions, and assistance. Its understanding remains open to correction and revision.</p><small>Flexible maintenance, reversible change</small></article>
+            <article class="expert-card"><div class="card-head"><span>E</span><b>EXPERT</b></div><h3>Verified persistence</h3><p>AI may use service interactions to propose a candidate extension, but professional logic becomes persistent only after expert confirmation. The client provides context, not a replacement for expert judgment.</p><small>Expert review before professional logic persists</small></article>
           </div>
         </div>
       </section>
 
       <section id="technical-report" class="research-resources shell">
-        <p class="section-label">06 / RESEARCH MATERIALS</p>
-        <div class="resource-heading"><h2>Read the code.<br />Follow the <em>argument.</em></h2><p>AICO is developed in public. The source repository contains the research framework and product code; the technical report will formalize the alignment model and its design rationale.</p></div>
+        <p class="section-label">07 / RESEARCH MATERIALS</p>
+        <div class="resource-heading"><h2>Read the code.<br />Follow the <em>argument.</em></h2><p>AICO is developed in public. The source repository contains the research framework and implementation; the technical report will set out the long-term memory model, its evolving structures, and the rationale behind them.</p></div>
         <div class="resource-grid">
-          <a class="resource-card source-card" href="https://github.com/PKQZPC/AICO" target="_blank" rel="noreferrer"><span>OPEN SOURCE</span><h3>AICO repository</h3><p>Framework, algorithm, backend, and interface code for long-term AI-human alignment and cooperation.</p><b>View on GitHub</b></a>
-          <article class="resource-card report-card"><span>TECHNICAL REPORT</span><h3>AI-human Alignment and Cooperation</h3><p>Enabling AI to learn cooperation through long-term alignment. A dedicated report will set out the system's memory model, relationship reasoning, dialogue strategy, and collaboration design.</p><small>Coming soon.</small></article>
-        </div>
-      </section>
-
-      <section class="closing shell">
-        <p class="section-label">AICO / AI-HUMAN ALIGNMENT AND COOPERATION</p>
-        <div class="closing-grid">
-          <h2>From remembering people<br />to <em>cooperating with them.</em></h2>
-          <div class="closing-context"><p class="closing-title">Enabling AI to learn cooperation through long-term alignment.</p><p class="closing-summary">AICO is an open research framework that studies how long-term memory can model people, relationships, and evolving dialogue purposes, then use that understanding to organize strategy, learn from feedback, and cooperate more appropriately over time.</p></div>
+          <a class="resource-card source-card" href="https://github.com/PKQZPC/AICO" target="_blank" rel="noreferrer"><span>OPEN SOURCE</span><h3>AICO repository</h3><p>Framework, algorithms, backend, and interface code for long-term AI memory, evolving context, strategy, and future action.</p><b>View on GitHub</b></a>
+          <article class="resource-card report-card"><span>TECHNICAL REPORT</span><h3>AI-human Alignment and Cooperation</h3><p>Enabling AI to learn cooperation through long-term alignment. The report will formalize AICO's long-term memory model, context reasoning, strategy evolution, and maintenance regimes.</p><small>Coming soon.</small></article>
         </div>
       </section>
 
       <section id="citation" class="citation-section">
         <div class="shell citation-layout">
-          <div><p class="section-label">07 / CITATION</p><h2>Citing <em>AICO.</em></h2><p>Until the technical report is published, please cite AICO as an open-source research framework. The formal report citation will be added at publication.</p></div>
+          <div><p class="section-label">08 / CITATION</p><h2>Citing <em>AICO.</em></h2><p>Until the technical report is published, please cite AICO as an open-source research framework. The formal report citation will be added at publication.</p></div>
           <div class="citation-code">
             <div class="citation-code-head"><span>BIBTEX</span><button class="copy-citation" type="button" data-copy-target="aico-bibtex">Copy citation</button></div>
             <pre id="aico-bibtex"><code>@software{aico_lab_aico_2026,
@@ -185,7 +173,6 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="project-footer shell"><span>AICO / AI-human Alignment and Cooperation</span><div class="footer-links"><a href="mailto:zhoupengcheng0219@gmail.com">Contact</a><a href="#top">Back to top</a></div></footer>
