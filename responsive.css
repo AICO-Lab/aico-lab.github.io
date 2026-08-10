@@ -1,0 +1,7 @@
+@media (max-width: 620px) {
+  .map-node { transform: scale(.8); }
+  .node-a { left: 19%; top: 52px; }
+  .node-b { right: 19%; top: 51px; }
+  .node-c { left: 33%; bottom: 39px; }
+  .map-caption { left: 18px; right: 18px; bottom: 13px; font-size: 11px; }
+}

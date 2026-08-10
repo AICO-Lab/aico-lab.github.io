@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AICO is a research framework for long-term AI-human alignment and cooperation." />
+    <title>AICO | AI-human Alignment and Cooperation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body>
+    <header class="site-header shell">
+      <a class="brand" href="#top" aria-label="AICO home"><span class="brand-mark">A</span><span>AICO</span></a>
+      <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+        <a href="#thesis">Thesis</a><a href="#memory">Memory model</a><a href="#loop">Cooperation loop</a><a href="#authority">Authority</a>
+      </nav>
+      <a class="header-link" href="#thesis">Read the thesis <span>↓</span></a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> AI-HUMAN ALIGNMENT AND COOPERATION</p>
+          <h1>Long-term memory<br />that learns <em>how to cooperate.</em></h1>
+          <p class="hero-text">AICO is an open research framework for AI that does more than retain history. It learns who it is working with, what a relationship means now, and how a conversation should move forward.</p>
+          <div class="hero-actions"><a class="button primary" href="#thesis">The AICO thesis <span>↓</span></a><a class="button secondary" href="#loop">See the alignment loop</a></div>
+        </div>
+        <div class="hero-system" aria-label="AICO memory system illustration">
+          <div class="system-top"><span>OWNER-PRIVATE CONTEXT</span><span class="pulse">LIVE</span></div>
+          <div class="system-core"><img src="assets/aico-logo.png" alt="AICO logo" /></div>
+          <div class="signal signal-a"><b>PERSON</b><span>preferences &amp; goals</span></div>
+          <div class="signal signal-b"><b>RELATIONSHIP</b><span>trust &amp; shared history</span></div>
+          <div class="signal signal-c"><b>STRATEGY</b><span>purpose &amp; next move</span></div>
+          <div class="system-bottom">Not a chat archive. A living model for collaboration.</div>
+        </div>
+        <p class="hero-note">AICO treats long-term interaction as an evolving alignment process, not a longer context window.</p>
+      </section>
+
+      <section id="thesis" class="thesis shell">
+        <p class="section-label">01 / THE THESIS</p>
+        <div class="thesis-heading"><h2>Memory should change<br />what AI does <em>next.</em></h2><div><p class="lead">Most systems remember facts, retrieve history, or inject a profile into context. AICO asks a harder question: can long-term information shape an AI's judgment, strategy, and conduct in the present moment?</p><p>For AICO, continuity is not only factual. It is behavioral: a response should reflect relationship stage, topic, purpose, pace, and the authority of the people involved.</p></div></div>
+        <div class="contrast-grid">
+          <article class="contrast muted"><span>MEMORY AS STORAGE</span><h3>What happened before?</h3><p>Facts, preferences, transcripts, and retrieved passages are placed back into context.</p></article>
+          <article class="contrast active"><span>MEMORY AS ALIGNMENT</span><h3>What is appropriate now?</h3><p>Personal history, relationship context, topic, and strategy inform the next cooperative action.</p></article>
+        </div>
+      </section>
+
+      <section id="memory" class="memory-section">
+        <div class="shell">
+          <div class="memory-intro"><p class="section-label">02 / A MEMORY MODEL WITH STRUCTURE</p><h2>Remember the world<br />around the person.</h2><p>AICO does not indiscriminately inject all history. It constructs local, relevant context for the relationship and purpose of the present interaction.</p></div>
+          <div class="memory-map">
+            <svg class="map-edges" viewBox="0 0 1000 320" preserveAspectRatio="none" aria-hidden="true">
+              <path class="edge edge-active" d="M500 132 L228 90" />
+              <path class="edge" d="M500 132 L772 89" />
+              <path class="edge" d="M500 132 L369 242" />
+            </svg>
+            <div class="map-center"><strong>ME</strong><span>aligned subject</span></div>
+            <div class="map-node node-a active-node"><b>A</b><span>current counterpart</span></div><div class="map-node node-b"><b>B</b><span>colleague</span></div><div class="map-node node-c"><b>C</b><span>family</span></div>
+            <p class="map-caption"><strong>A is active.</strong> The system reads A's local relationship subgraph, not a global social graph.</p>
+          </div>
+          <div class="memory-grid">
+            <article><span>01</span><h3>Personal profile</h3><p>Stable and changing preferences, boundaries, memories, and long-term goals.</p></article>
+            <article><span>02</span><h3>Relationship graph</h3><p>Owner-private people, events, constraints, and relationship state around the current counterpart.</p></article>
+            <article><span>03</span><h3>Dynamic topic graph</h3><p>Topics are extracted, linked, reused, merged, or created as interaction evolves.</p></article>
+            <article><span>04</span><h3>Dialogue strategy tree</h3><p>A multi-turn organizer for dialogue phases, next actions, transition conditions, retrieval needs, and risk boundaries.</p></article>
+            <article><span>05</span><h3>Multi-source RAG</h3><p>Personal, relationship, knowledge, strategy, and expert memory provide grounded context.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="loop" class="loop shell">
+        <p class="section-label">03 / FROM ALIGNMENT TO COOPERATION</p>
+        <div class="loop-heading"><h2>A response is a move<br />in a longer <em>relationship.</em></h2><p>AICO organizes more than retrieval. It uses a dialogue strategy tree to turn context into an intentional multi-turn path: understand, establish common ground, enter the core request, and adjust from real feedback.</p></div>
+        <div class="loop-track">
+          <article><span>01</span><h3>Interaction</h3><p>Conversation, event, or request enters the system.</p></article><i>→</i>
+          <article><span>02</span><h3>Alignment model</h3><p>Read person, relationship, topic, goal, and expert logic.</p></article><i>→</i>
+          <article><span>03</span><h3>Strategy organization</h3><p>Retrieve local context and select or extend a dialogue strategy.</p></article><i>→</i>
+          <article><span>04</span><h3>Cooperative action</h3><p>Respond, recommend, or support professional judgment.</p></article>
+        </div>
+        <div class="feedback-row"><span>USER / PARTNER / EXPERT / SYSTEM FEEDBACK</span><p>Feedback becomes evidence for calibration, confirmation, revision, or rejection in the next turn.</p><b>↺</b></div>
+      </section>
+
+      <section id="authority" class="authority">
+        <div class="shell authority-grid">
+          <div><p class="section-label">04 / AUTHORITY AND CONFIRMATION</p><h2>Alignment is not<br />AI deciding <em>alone.</em></h2><p class="authority-copy">AICO separates proposal from authority. The model may surface a candidate topic, profile update, relationship interpretation, or strategy branch. The system preserves evidence and governance; people retain meaningful control.</p></div>
+          <div class="authority-cards">
+            <article class="personal-card"><div class="card-head"><span>P</span><b>PERSONAL</b></div><h3>Calibrated with the person</h3><p>The user can confirm, revise, reject, or revoke a candidate understanding of their own preferences, relationships, and strategies.</p><small>Authority: user confirmation</small></article>
+            <article class="expert-card"><div class="card-head"><span>E</span><b>EXPERT</b></div><h3>Grounded in professional judgment</h3><p>AI may suggest candidate branches, but the expert retains final authority over professional logic, service style, and decision rules.</p><small>Authority: expert confirmation</small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing shell"><p class="section-label">AICO</p><h2>From remembering people<br />to <em>cooperating with them.</em></h2><p>AI-human Alignment and Cooperation</p></section>
+    </main>
+
+    <footer class="site-footer shell"><span>AICO / AI-human Alignment and Cooperation</span><a href="#top">Back to top ↑</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
