@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AICO is an open research framework for long-term AI memory, relationship-aware AI, dialogue strategy, and human authority in AI-human alignment and cooperation." />
+    <meta name="description" content="AICO is an open research framework for long-term AI memory, relationship-aware AI, dialogue strategy, and AI that learns to cooperate with people through long-term alignment." />
     <meta name="keywords" content="AICO, long-term AI memory, AI-human alignment, AI cooperation, relationship-aware AI, dialogue strategy tree, personalized AI, multi-source RAG" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Pengcheng Zhou" />
@@ -12,23 +12,23 @@
     <link rel="icon" href="assets/aico-logo.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://aico-lab.github.io/" />
-    <meta property="og:title" content="AICO | Long-Term AI Memory, Alignment and Cooperation" />
-    <meta property="og:description" content="An open research framework for relationship-aware AI, dialogue strategy, and human authority in long-term cooperation." />
+    <meta property="og:title" content="AI-human Alignment and Cooperation: enabling AI to learn cooperation through long-term alignment" />
+    <meta property="og:description" content="An open research framework for relationship-aware AI, dialogue strategy, and long-term cooperation with people." />
     <meta property="og:image" content="https://aico-lab.github.io/assets/aico-logo.png" />
     <meta property="og:image:alt" content="AICO logo" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="AICO | Long-Term AI Memory, Alignment and Cooperation" />
-    <meta name="twitter:description" content="An open research framework for relationship-aware AI, dialogue strategy, and human authority in long-term cooperation." />
-    <title>AICO | Long-Term AI Memory, Alignment and Cooperation</title>
-    <link rel="stylesheet" href="styles.css?v=2404834" />
-    <link rel="stylesheet" href="responsive.css?v=2404834" />
-    <link rel="stylesheet" href="resources.css?v=2404834" />
+    <meta name="twitter:title" content="AI-human Alignment and Cooperation: enabling AI to learn cooperation through long-term alignment" />
+    <meta name="twitter:description" content="An open research framework for relationship-aware AI, dialogue strategy, and long-term cooperation with people." />
+    <title>AI-human Alignment and Cooperation: enabling AI to learn cooperation through long-term alignment</title>
+    <link rel="stylesheet" href="styles.css?v=20260810-3" />
+    <link rel="stylesheet" href="responsive.css?v=20260810-3" />
+    <link rel="stylesheet" href="resources.css?v=20260810-3" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareSourceCode",
         "name": "AICO",
-        "description": "An open research framework for long-term AI memory, relationship-aware AI, dialogue strategy, and human authority in AI-human alignment and cooperation.",
+        "description": "An open research framework for long-term AI memory, relationship-aware AI, dialogue strategy, and AI that learns to cooperate with people through long-term alignment.",
         "url": "https://aico-lab.github.io/",
         "codeRepository": "https://github.com/PKQZPC/AICO",
         "license": "https://www.gnu.org/licenses/agpl-3.0.html",
@@ -49,12 +49,12 @@
     <header class="site-header shell">
       <a class="brand" href="#top" aria-label="AICO home"><span class="brand-mark">A</span><span>AICO</span></a>
       <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
-        <a href="#thesis">Thesis</a><a href="#focus">Research focus</a><a href="#memory">Memory model</a><a href="#loop">Cooperation loop</a><a href="#authority">Authority</a><a href="#contact">Contact</a>
+        <a href="#thesis">Thesis</a><a href="#focus">Research focus</a><a href="#memory">Memory model</a><a href="#loop">Cooperation loop</a><a href="#cooperation">Cooperation</a><a href="mailto:zhoupengcheng0219@gmail.com">Contact</a>
       </nav>
       <div class="header-resources">
         <a class="source-link" href="https://github.com/PKQZPC/AICO" target="_blank" rel="noreferrer">Code <span>&nearr;</span></a>
         <a class="header-link" href="#technical-report">Technical report <span>&darr;</span></a>
-        <a class="contact-link" href="#contact">Contact <span>&darr;</span></a>
+        <a class="contact-link" href="mailto:zhoupengcheng0219@gmail.com">Contact <span>&nearr;</span></a>
       </div>
       <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
     </header>
@@ -80,7 +80,7 @@
 
       <section id="thesis" class="thesis shell">
         <p class="section-label">01 / THE THESIS</p>
-        <div class="thesis-heading"><h2>Memory should change<br />what AI does <em>next.</em></h2><div><p class="lead">Most systems remember facts, retrieve history, or inject a profile into context. AICO asks a harder question: can long-term information shape an AI's judgment, strategy, and conduct in the present moment?</p><p>For AICO, continuity is not only factual. It is behavioral: a response should reflect relationship stage, topic, purpose, pace, and the authority of the people involved.</p></div></div>
+        <div class="thesis-heading"><h2>Memory should change<br />what AI does <em>next.</em></h2><div><p class="lead">Most systems remember facts, retrieve history, or inject a profile into context. AICO asks a harder question: can long-term information shape an AI's judgment, strategy, and conduct in the present moment?</p><p>For AICO, continuity is not only factual. It is behavioral: a response should reflect relationship stage, topic, purpose, pace, and how AI can cooperate with people appropriately now.</p></div></div>
         <div class="contrast-grid">
           <article class="contrast muted"><span>MEMORY AS STORAGE</span><h3>What happened before?</h3><p>Facts, preferences, transcripts, and retrieved passages are placed back into context.</p></article>
           <article class="contrast active"><span>MEMORY AS ALIGNMENT</span><h3>What is appropriate now?</h3><p>Personal history, relationship context, topic, and strategy inform the next cooperative action.</p></article>
@@ -91,13 +91,13 @@
         <div class="shell">
           <div class="focus-heading">
             <div><p class="section-label">02 / RESEARCH FOCUS</p><h2>Four research questions<br />for <em>lasting cooperation.</em></h2></div>
-            <p>AICO treats long-term interaction as a structured research problem, not a longer context window. Its work is organized around memory, relationships, strategy, and accountable authority.</p>
+            <p>AICO treats long-term interaction as a structured research problem, not a longer context window. Its work is organized around memory, relationships, strategy, and learning to cooperate with people.</p>
           </div>
           <div class="focus-grid">
             <article><span>01</span><h3>Long-term AI memory</h3><p>How can accumulated interaction guide current judgment without reducing memory to a transcript?</p></article>
             <article><span>02</span><h3>Relationship-aware AI</h3><p>How should a system model the local relationship around the person it is working with now?</p></article>
             <article><span>03</span><h3>Strategy-guided dialogue</h3><p>How can a dialogue strategy tree organize multi-turn cooperation, feedback, and change?</p></article>
-            <article><span>04</span><h3>Human authority in alignment</h3><p>Where should personal and expert confirmation govern an AI's candidate understanding?</p></article>
+            <article><span>04</span><h3>Collaborative alignment</h3><p>How can people and AI refine a shared understanding through feedback across time?</p></article>
           </div>
         </div>
       </section>
@@ -137,12 +137,12 @@
         <div class="feedback-row"><span>USER / PARTNER / EXPERT / SYSTEM FEEDBACK</span><p>Feedback becomes evidence for calibration, confirmation, revision, or rejection in the next turn.</p><b>↺</b></div>
       </section>
 
-      <section id="authority" class="authority">
+      <section id="cooperation" class="authority">
         <div class="shell authority-grid">
-          <div><p class="section-label">05 / AUTHORITY AND CONFIRMATION</p><h2>Alignment is not<br />AI deciding <em>alone.</em></h2><p class="authority-copy">AICO separates proposal from authority. The model may surface a candidate topic, profile update, relationship interpretation, or strategy branch. The system preserves evidence and governance; people retain meaningful control.</p></div>
+          <div><p class="section-label">05 / COOPERATIVE ALIGNMENT</p><h2>Alignment is learned<br />with <em>people.</em></h2><p class="authority-copy">AICO turns candidate topics, profile updates, relationship interpretations, and strategy branches into opportunities for collaboration. People can shape, revise, or reject the system's understanding as interaction evolves.</p></div>
           <div class="authority-cards">
-            <article class="personal-card"><div class="card-head"><span>P</span><b>PERSONAL</b></div><h3>Calibrated with the person</h3><p>The user can confirm, revise, reject, or revoke a candidate understanding of their own preferences, relationships, and strategies.</p><small>Authority: user confirmation</small></article>
-            <article class="expert-card"><div class="card-head"><span>E</span><b>EXPERT</b></div><h3>Grounded in professional judgment</h3><p>AI may suggest candidate branches, but the expert retains final authority over professional logic, service style, and decision rules.</p><small>Authority: expert confirmation</small></article>
+            <article class="personal-card"><div class="card-head"><span>P</span><b>PERSONAL</b></div><h3>Calibrated with the person</h3><p>The user can confirm, revise, reject, or revoke a candidate understanding of their own preferences, relationships, and strategies.</p><small>Confirmed with the user</small></article>
+            <article class="expert-card"><div class="card-head"><span>E</span><b>EXPERT</b></div><h3>Built with professional judgment</h3><p>AI can suggest candidate branches while experts shape the professional logic, service style, and decision rules used in collaboration.</p><small>Confirmed with the expert</small></article>
           </div>
         </div>
       </section>
@@ -152,24 +152,20 @@
         <div class="resource-heading"><h2>Read the code.<br />Follow the <em>argument.</em></h2><p>AICO is developed in public. The source repository contains the research framework and product code; the technical report will formalize the alignment model and its design rationale.</p></div>
         <div class="resource-grid">
           <a class="resource-card source-card" href="https://github.com/PKQZPC/AICO" target="_blank" rel="noreferrer"><span>OPEN SOURCE</span><h3>AICO repository</h3><p>Framework, algorithm, backend, and interface code for long-term AI-human alignment and cooperation.</p><b>View on GitHub &nearr;</b></a>
-          <article class="resource-card report-card"><span>TECHNICAL REPORT</span><h3>AICO: Alignment and Cooperation</h3><p>A dedicated report will set out the system's memory model, relationship reasoning, dialogue strategy, and authority boundaries.</p><small>Coming soon.</small></article>
+          <article class="resource-card report-card"><span>TECHNICAL REPORT</span><h3>AI-human Alignment and Cooperation</h3><p>Enabling AI to learn cooperation through long-term alignment. A dedicated report will set out the system's memory model, relationship reasoning, dialogue strategy, and collaboration design.</p><small>Coming soon.</small></article>
         </div>
-      </section>
-
-      <section id="contact" class="contact-section">
-        <div class="shell contact-layout"><div><p class="section-label">07 / CONTACT</p><h2>Research begins<br />with a <em>conversation.</em></h2></div><div class="contact-copy"><p>For research collaboration, technical exchange, or questions about AICO, contact the project directly.</p><a href="mailto:zhoupengcheng0219@gmail.com">zhoupengcheng0219@gmail.com <span>&nearr;</span></a></div></div>
       </section>
 
       <section class="closing shell"><p class="section-label">AICO</p><h2>From remembering people<br />to <em>cooperating with them.</em></h2><p>AI-human Alignment and Cooperation</p></section>
 
       <section id="citation" class="citation-section">
         <div class="shell citation-layout">
-          <div><p class="section-label">08 / CITATION</p><h2>Citing <em>AICO.</em></h2><p>Until the technical report is published, please cite AICO as an open-source research framework. The formal report citation will be added at publication.</p></div>
+          <div><p class="section-label">07 / CITATION</p><h2>Citing <em>AICO.</em></h2><p>Until the technical report is published, please cite AICO as an open-source research framework. The formal report citation will be added at publication.</p></div>
           <div class="citation-code">
             <div class="citation-code-head"><span>BIBTEX</span><button class="copy-citation" type="button" data-copy-target="aico-bibtex">Copy citation</button></div>
             <pre id="aico-bibtex"><code>@software{aico_lab_aico_2026,
   author = {Zhou, Pengcheng},
-  title  = {AICO: Alignment and Cooperation},
+  title  = {AI-human Alignment and Cooperation: enabling AI to learn cooperation through long-term alignment},
   year   = {2026},
   url    = {https://github.com/PKQZPC/AICO},
   note   = {Open-source research framework}
@@ -180,7 +176,7 @@
 
     </main>
 
-    <footer class="site-footer shell"><span>AICO / AI-human Alignment and Cooperation</span><a href="#top">Back to top ↑</a></footer>
+    <footer class="project-footer shell"><span>AICO / AI-human Alignment and Cooperation</span><div class="footer-links"><a href="mailto:zhoupengcheng0219@gmail.com">Contact</a><a href="#top">Back to top &uarr;</a></div></footer>
     <script src="script.js"></script>
   </body>
 </html>
