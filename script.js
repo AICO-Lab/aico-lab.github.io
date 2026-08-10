@@ -12,3 +12,20 @@ navigation?.querySelectorAll('a').forEach((link) => {
     menuButton?.setAttribute('aria-expanded', 'false')
   })
 })
+
+document.querySelectorAll('.copy-citation').forEach((button) => {
+  button.addEventListener('click', async () => {
+    const target = document.getElementById(button.dataset.copyTarget)
+    if (!target) return
+
+    try {
+      if (!navigator.clipboard) throw new Error('Clipboard unavailable')
+      await navigator.clipboard.writeText(target.textContent.trim())
+      button.textContent = 'Copied'
+      window.setTimeout(() => { button.textContent = 'Copy citation' }, 1800)
+    } catch {
+      button.textContent = 'Select text to copy'
+      window.setTimeout(() => { button.textContent = 'Copy citation' }, 2200)
+    }
+  })
+})
